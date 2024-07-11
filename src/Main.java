@@ -12,23 +12,18 @@ public class Main {
         var dog = 8.0;
         var cat = 3.6;
         var paper = 763789;
-        System.out.println("dog = " + dog);
-        System.out.println("cat = " + cat);
-        System.out.println("paper = " + paper);
+        System.out.println("Задание 1: dog = " + dog + "; cat = " + cat + "; paper = " + paper);
     /*
      Задача 2.
      Увеличьте значение каждой перечисленной в прошлой задаче переменной на 4.
      Для решения этой задачи используйте тип переменной var.
      Выведите в консоль новые значения переменных.
 
-     ...Не понял, зачем второй раз объявлять тип переменной...
      */
         dog += 4;
         cat += 4;
         paper += 4;
-        System.out.println("dog = " + dog);
-        System.out.println("cat = " + cat);
-        System.out.println("paper = " + paper);
+        System.out.println("Задание 2: dog = " + dog + "; cat = " + cat + "; paper = " + paper);
     /*
      Задача 3.
      Увеличьте значение каждой перечисленной в прошлой задаче переменной на 4.
@@ -40,45 +35,64 @@ public class Main {
         dog -= 3.5;
         cat -= 1.6;
         paper -= 7639;
-        System.out.println("dog = " + dog);
-        System.out.println("cat = " + cat);
-        System.out.println("paper = " + paper);
+        System.out.println("Задание 3: dog = " + dog + "; cat = " + cat + "; paper = " + paper);
     /*
      Задача 4.
      Инициализируйте (присвойте значение) переменную friend значением 19.
     Увеличьте значение переменной на 2, после чего поделите значение на 7.
-    После каждой операции выводите значение переменной в консоль. В итоге у вас должно быть выведено 3 значения одной переменной.
+    После каждой операции выводите значение переменной в консоль. В итоге у вас должно быть выведено 3 значения
+    одной переменной.
     Для решения этой задачи используйте тип переменной var.*/
-        var friend = 19;    System.out.println("friend = " + friend);
-        friend += 2;        System.out.println("friend = " + friend);
-        friend /= 7;        System.out.println("friend = " + friend);
+        System.out.print("Задание 4:");
+        var friend = 19;
+        System.out.print(" friend = " + friend + ";");
+        friend += 2;
+        System.out.print(" friend = " + friend + ";");
+        friend /= 7;
+        System.out.println(" friend = " + friend);
     /*
      Задача 5
      Инициализируйте переменную frog значением 3.5.
      Увеличьте переменную в 10 раз и поделите на 3.5. Добавьте к последнему значению переменной 4.
-     После каждой операции выводите значение переменной в консоль. В итоге у вас должно быть выведено 4 значения одной переменной.
+     После каждой операции выводите значение переменной в консоль. В итоге у вас должно быть выведено 4 значения
+     одной переменной.
      Для решения этой задачи используйте тип переменной var.*/
-
-        var frog = 3.5; System.out.println("frog = " + frog);
-        frog *= 10;     System.out.println("frog = " + frog);
-        frog /=3.5;     System.out.println("frog = " + frog);
-        frog += 4;      System.out.println("frog = " + frog);
+        System.out.print("Задание 5:");
+        var frog = 3.5;
+        System.out.print(" frog = " + frog);
+        frog *= 10;
+        System.out.print(" frog = " + frog);
+        frog /= 3.5;
+        System.out.print(" frog = " + frog);
+        frog += 4;
+        System.out.println(" frog = " + frog);
 
     /*
      Задача 6
-     В боксе перед каждым боем спортсменов взвешивают. Это делают для того, чтобы убедиться, что боксеры соответствуют своей весовой категории и бой будет честным.
+     В боксе перед каждым боем спортсменов взвешивают. Это делают для того, чтобы убедиться, что боксеры соответствуют
+     своей весовой категории и бой будет честным.
      Масса одного боксера — 78.2 кг.
      Масса второго боксера — 82.7 кг.
      Подсчитайте и выведите в консоль общую массу двух бойцов.
-     Подсчитайте и выведите в консоль разницу между массами бойцов. Для решения этой задачи используйте тип переменной var.
+     Подсчитайте и выведите в консоль разницу между массами бойцов. Для решения этой задачи используйте тип
+     переменной var.
      */
-
+        System.out.print("Задание 6:");
         var boxer1Weight = 78.2;
         var boxer2Weight = 82.7;
-        System.out.println("Общая масса двух бойцов = " + (boxer1Weight + boxer2Weight));
-        System.out.println("Разница масс двух бойцов = " + (Math.abs(boxer1Weight - boxer2Weight)));
-        System.out.println("Остаток от деления весов бойцов нормальных условиях = " +
-                (Math.max(boxer1Weight,boxer2Weight) % (Math.min(boxer1Weight, boxer2Weight))));
+        System.out.print(" Общая масса двух бойцов = " + (boxer1Weight + boxer2Weight) + ".");
+        System.out.println(" Разница масс двух бойцов = " + (Math.abs(boxer1Weight - boxer2Weight)) + ".");
+    /*
+    Задача 7
+    Найдите остаток от деления между двумя весами. Для решения этой задачи используйте тип переменной var.
+    */
+        System.out.print("Задание 7:");
+        System.out.println(" Остаток от деления весов бойцов в нормальных условиях = " +
+                ((Math.max(boxer1Weight, boxer2Weight)) % (Math.min(boxer1Weight, boxer2Weight))) + ".");
+        /*отладка предупреждения о бессмыленности макс*/
+        /*System.out.println(Math.max(boxer1Weight, boxer2Weight));*/
+        /*IDE понимает, что сравниваются, по факту, константы???*/
+
     /*
      Задача 8
      Решите задачу с помощью арифметических функций.
@@ -92,14 +106,14 @@ public class Main {
      «Если в компании работает … человек, то всего … часов работы может быть поделено между сотрудниками».
      Для решения этой задачи используйте тип переменной var.
      */
+        System.out.println("Задание 8:");
         var stuff = 640;
         var workHours = 8;
         var overPeople = 94;
         var totalPeople = stuff / workHours;
         System.out.println("Всего работников в компании — " + totalPeople + " чел.");
-        System.out.println("Если в компании работает " + (totalPeople + overPeople) +
-                " чел., то всего " + ((totalPeople + overPeople) * workHours) +
-                " часов работы может быть поделено между сотрудниками");
+        System.out.println("Если в компании работает " + (totalPeople + overPeople) + " человек, то всего " +
+                ((totalPeople + overPeople) * workHours) + " часов работы может быть поделено между сотрудниками");
     }
 
 }
